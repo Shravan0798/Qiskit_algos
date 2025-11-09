@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qalgos"
+version = "0.1.0"
+description = "Quantum algorithm collection implemented using Qiskit."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Shravan" }]
+dependencies = [
+    "qiskit>=2.0.0",
+    "matplotlib>=3.0.0",
+]
+requires-python = ">=3.8"
