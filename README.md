@@ -16,6 +16,7 @@ It provides reusable circuit builders, oracle generators, and backend utilities 
 
 ## Project Structure
 
+```
 Qiskit_algos/
 │
 ├── qalgos/
@@ -30,6 +31,7 @@ Qiskit_algos/
 ├── MANIFEST.in
 ├── LICENSE
 └── README.md
+```
 
 ---
 
@@ -37,6 +39,7 @@ Qiskit_algos/
 
 ### Option 1 — Local Installation (Recommended for Development)
 
+```bash
 git clone https://github.com/Shravan0798/Qiskit_algos.git
 cd Qiskit_algos
 pip install -e .
@@ -45,11 +48,12 @@ pip install -e .
 
 python setup.py sdist bdist_wheel
 pip install dist/qalgos-0.1.0-py3-none-any.whl
-
+```
 ---
 
 ## Example
 
+```python
 from qalgos.deutsch_jozsa import deutsch_jozsa_circuit
 from qalgos.bernstein_vazirani import bernstein_vazirani_circuit
 from qalgos.backends import run_circuit
@@ -62,3 +66,4 @@ run_circuit(dj_circuit, shots=1024)
 bv_circuit = bernstein_vazirani_circuit("10101", True)
 run_circuit(bv_circuit, shots=1024)
 
+```
