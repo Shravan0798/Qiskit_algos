@@ -61,10 +61,10 @@ from qalgos.backends import run_circuit
 
 # Deutsch-Jozsa example
 dj_circuit = deutsch_jozsa_circuit(5, "balanced", True)
-run_circuit(dj_circuit, shots=1024)
+run_circuit(dj_circuit, shots=1024, optimization_level=3)
 
 # Bernstein-Vazirani example
 bv_circuit = bernstein_vazirani_circuit("10101", True)
-run_circuit(bv_circuit, shots=1024)
+run_circuit(bv_circuit, shots=1024, optimization_level=3)
 
 ```
