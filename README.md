@@ -43,9 +43,10 @@ Qiskit_algos/
 git clone https://github.com/Shravan0798/Qiskit_algos.git
 cd Qiskit_algos
 pip install -e .
-
+```
 ### Option 2 - Build & Install from Distribution
 
+```bash
 python setup.py sdist bdist_wheel
 pip install dist/qalgos-0.1.0-py3-none-any.whl
 ```
